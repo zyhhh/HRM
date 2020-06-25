@@ -1,4 +1,4 @@
-package hrm.common.entity;
+package com.hrm.common.entity;
 
 /**
  * 公共的返回码

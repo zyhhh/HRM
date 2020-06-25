@@ -1,4 +1,4 @@
-package hrm.common.entity;
+package com.hrm.common.entity;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
