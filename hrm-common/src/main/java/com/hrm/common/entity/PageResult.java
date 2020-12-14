@@ -9,9 +9,9 @@ import java.util.List;
 /**
  * 分页返回的结果
  *      {
- *          “success”：“成功”，
- *          “code”：10000
- *          “message”：“ok”，
+ *          “success”：true，
+ *          “code”：0000
+ *          “message”：“成功”，
  *          ”data“：{
  *              total：//总条数
  *              rows ：//数据列表

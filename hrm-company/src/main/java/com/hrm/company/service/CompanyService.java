@@ -2,12 +2,11 @@ package com.hrm.company.service;
 
 import com.hrm.common.utils.IdWorker;
 import com.hrm.company.dao.CompanyDao;
-import com.hrm.model.domain.company.Company;
+import com.hrm.model.Company;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class CompanyService {
@@ -40,7 +39,7 @@ public class CompanyService {
     }
 
     /**
-     * 删除企业
+     * 根据id删除企业
      * @param id
      */
     public void deleteCompanyById(String id){

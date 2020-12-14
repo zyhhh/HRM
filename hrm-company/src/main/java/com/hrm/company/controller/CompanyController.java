@@ -3,7 +3,7 @@ package com.hrm.company.controller;
 import com.hrm.common.entity.Result;
 import com.hrm.common.entity.ResultCode;
 import com.hrm.company.service.CompanyService;
-import com.hrm.model.domain.company.Company;
+import com.hrm.model.Company;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

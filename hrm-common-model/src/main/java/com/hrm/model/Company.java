@@ -1,4 +1,4 @@
-package com.hrm.model.domain.company;
+package com.hrm.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -17,7 +17,6 @@ import java.util.Date;
 @AllArgsConstructor
 public class Company implements Serializable {
     private static final long serialVersionUID = 594829320713158219L;
-    //ID
     @Id
     private String id;
     /**
