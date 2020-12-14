@@ -6,6 +6,7 @@ import com.hrm.model.Company;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -23,9 +24,11 @@ public class CompanyService {
         //新增时传过来的对象没有id，需要使用id生成器
         String id = idWorker.nextId()+"";
         company.setId(id);
+        company.setCreateTime(new Date());
         //设置默认状态
         company.setAuditState("0"); //审核状态，0-未审核，1-审核通过
         company.setState(1); //激活状态，0-未激活，1-已激活
+        company.setBalance(0D);
         companyDao.save(company);
     }
 

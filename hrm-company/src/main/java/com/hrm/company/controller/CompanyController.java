@@ -11,6 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/company")
+@CrossOrigin
 public class CompanyController {
     @Autowired
     private CompanyService companyService;
@@ -45,7 +46,7 @@ public class CompanyController {
     }
 
     //查询所有企业，get请求
-    @GetMapping
+    @GetMapping("/all")
     public Result findAll(){
         List<Company> list = companyService.findAllCompany();
         return new Result(ResultCode.SUCCESS, list);

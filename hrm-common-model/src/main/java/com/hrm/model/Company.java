@@ -4,9 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -16,7 +14,7 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Company implements Serializable {
-    private static final long serialVersionUID = 594829320713158219L;
+    private static final long serialVersionUID = -8355577849043897287L;
     @Id
     private String id;
     /**
@@ -34,10 +32,12 @@ public class Company implements Serializable {
     /**
      * 续期时间
      */
+    @Temporal(TemporalType.DATE)
     private Date renewalDate;
     /**
      * 到期时间
      */
+    @Temporal(TemporalType.DATE)
     private Date expirationDate;
     /**
      * 公司地区
@@ -90,5 +90,6 @@ public class Company implements Serializable {
     /**
      * 创建时间
      */
+    @Temporal(TemporalType.DATE)
     private Date createTime;
 }
