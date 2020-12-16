@@ -1,6 +1,6 @@
 package com.hrm.company.dao;
 
-import com.hrm.model.Company;
+import com.hrm.model.company.Company;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

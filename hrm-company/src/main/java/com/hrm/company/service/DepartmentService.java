@@ -3,7 +3,7 @@ package com.hrm.company.service;
 import com.hrm.common.service.BaseService;
 import com.hrm.common.utils.IdWorker;
 import com.hrm.company.dao.DepartmentDao;
-import com.hrm.model.Department;
+import com.hrm.model.company.Department;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

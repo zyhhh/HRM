@@ -1,4 +1,4 @@
-package com.hrm.model;
+package com.hrm.model.company;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

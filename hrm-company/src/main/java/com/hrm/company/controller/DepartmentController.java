@@ -6,8 +6,8 @@ import com.hrm.common.entity.Result;
 import com.hrm.common.entity.ResultCode;
 import com.hrm.company.service.CompanyService;
 import com.hrm.company.service.DepartmentService;
-import com.hrm.model.Company;
-import com.hrm.model.Department;
+import com.hrm.model.company.Company;
+import com.hrm.model.company.Department;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,6 +19,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/department")
+@CrossOrigin
 public class DepartmentController extends BaseController {
     @Autowired
     private CompanyService companyService;

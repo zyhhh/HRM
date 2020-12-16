@@ -2,7 +2,7 @@ package com.hrm.company.service;
 
 import com.hrm.common.utils.IdWorker;
 import com.hrm.company.dao.CompanyDao;
-import com.hrm.model.Company;
+import com.hrm.model.company.Company;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

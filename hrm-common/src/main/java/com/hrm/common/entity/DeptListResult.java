@@ -1,7 +1,7 @@
 package com.hrm.common.entity;
 
-import com.hrm.model.Company;
-import com.hrm.model.Department;
+import com.hrm.model.company.Company;
+import com.hrm.model.company.Department;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

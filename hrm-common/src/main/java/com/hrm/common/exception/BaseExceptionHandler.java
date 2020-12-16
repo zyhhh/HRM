@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletResponse;
 public class BaseExceptionHandler {
     @ResponseBody
     @ExceptionHandler(value = Exception.class)
-    public Result err(HttpServletRequest request, HttpServletResponse response, Exception ex){
+    public Result errCatch(HttpServletRequest request, HttpServletResponse response, Exception ex){
         ex.printStackTrace();
         if(ex.getClass() == CommonException.class){
             CommonException cex = (CommonException) ex;
